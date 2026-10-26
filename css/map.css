@@ -1,0 +1,19 @@
+html,body{margin:0;height:100%;background:transparent;font-family:'Nunito Sans',system-ui,sans-serif;overflow:hidden}
+#wrap{position:relative;width:100%;height:100%}
+svg{width:100%;height:100%;display:block}
+.d{stroke:#fff;stroke-width:1.2;transition:fill .25s}
+.d.off{fill:#CBD3E6}
+.d.on{fill:#2B3F7A;cursor:pointer}
+.d.on:hover,.d.on.hl{fill:#CC5A3E}
+.pin{cursor:pointer}
+.pin .canopy{fill:#2A3F94;stroke:#fff;stroke-width:2.5;transition:fill .25s,transform .3s;transform-box:fill-box;transform-origin:50% 100%}
+.pin .trunk{fill:#D9342B;stroke:#fff;stroke-width:1.5}
+.pin:hover .canopy,.pin.hl .canopy{transform:scale(1.15)}
+.pin text{fill:#fff;font-weight:800;font-size:11px;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.pin:hover .canopy,.pin.hl .canopy{fill:#142463}
+#tip{position:absolute;pointer-events:none;background:#142463;color:#fff;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;opacity:0;transform:translate(-50%,-130%);transition:opacity .2s;white-space:nowrap}
+#legend{position:absolute;left:14px;bottom:12px;display:flex;gap:14px;font-size:12.5px;font-weight:700;color:#4F5677;background:#fff;border-radius:999px;padding:7px 14px;box-shadow:0 6px 16px -8px rgba(20,36,99,.35)}
+.lg{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.lg--on{background:#2B3F7A}
+.lg--off{background:#CBD3E6}
+#err{position:absolute;inset:0;display:none;align-items:center;justify-content:center;color:#4F5677;font-size:14px;text-align:center;padding:24px}
